@@ -1,0 +1,28 @@
+{
+  "name": "castrucci/php-test",
+  "version": "1.0.0",
+  "require": {
+    "monolog/monolog": "2.2"
+  },
+  "config": {
+    "secure-http": false,
+    "vendor-dir": "src/vendor" 
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "http://localhost:8081/repository/composer-proxy/"
+    },
+    {
+      "packagist.org": false
+    }
+  ],
+  "autoload": {
+    "classmap": [
+      "src/app"
+    ]
+  },
+  "require-dev": {
+    "phpunit/phpunit": "9.5"
+  }
+}
