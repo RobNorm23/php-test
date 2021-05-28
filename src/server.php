@@ -1,9 +1,11 @@
 <?php
 
+declare(strict_types=1);
+
+require_once "vendor/autoload.php";
+
 use Monolog\Logger;
 use Monolog\Handler\StreamHandler;
-
-declare(strict_types=1);
 
 $http = new Swoole\Http\Server("0.0.0.0", 9501);
 $http->on(
