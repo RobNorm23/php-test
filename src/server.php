@@ -1,11 +1,22 @@
 <?php
 
+use Monolog\Logger;
+use Monolog\Handler\StreamHandler;
+
 declare(strict_types=1);
 
 $http = new Swoole\Http\Server("0.0.0.0", 9501);
 $http->on(
     "request",
     function (Swoole\Http\Request $request, Swoole\Http\Response $response) {
+		
+		$log = new Logger('name');
+		$log->pushHandler(new StreamHandler('./the.log', Logger::WARNING));
+
+		// add records to the log
+		$log->error('Bar');
+		
+		
         $response->end(
             <<<EOT
                 <pre>
