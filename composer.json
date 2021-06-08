@@ -6,7 +6,7 @@
   },
   "config": {
     "secure-http": false,
-    "vendor-dir": "src/vendor" 
+    "vendor-dir": "vendor" 
   },
   "repositories": [
     {
@@ -19,7 +19,7 @@
   ],
   "autoload": {
     "classmap": [
-      "src/app"
+      "src/main/php"
     ]
   },
   "require-dev": {

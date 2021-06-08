@@ -1,0 +1,6 @@
+projectKey=php-test
+serverUrl=http://localhost:9000
+serverVersion=8.9.0.43852
+dashboardUrl=http://localhost:9000/dashboard?id=php-test
+ceTaskId=AXnqmLDsDtUpNnq_S0hG
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AXnqmLDsDtUpNnq_S0hG
